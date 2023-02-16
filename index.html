@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Hello, world!</title>
+    <style>
+        .carousel
+        {
+          width: 100%;
+        }
+        .carousel-item
+        {
+          /* height: ; */
+          height:95vh;
+        }
+        .container
+        {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 50px;
+        }
+        /* .card
+        {
+          width: 00px;
+        } */
+        .cont2 .card
+        {
+          border-radius: 5px;
+        }
+        .cont2 .card .card-body{
+          color: white;
+          /* background-color: red; */
+        }
+        .icon
+        {
+          width: 40px;
+          height: 40px;
+          background-color: rgba(255, 244, 246, 0.205);
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 15px;
+          color: rgb(255, 255, 255);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .icon:nth-child(2)
+        {
+          background-color: rgb(42, 155, 51);
+        }
+        .icon:nth-child(3)
+        {
+          background-color: rgb(63, 180, 184);
+        }
+        .icon:nth-child(4)
+        {
+          background-color: rgb(184, 103, 37);
+        }
+        
+        .btn
+        {
+          text-transform: capitalize;
+        }
+        .content
+        {
+          width: 500px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 10;
+          /* background-color: rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.2); */
+        }
+        .content h1{
+          text-transform: capitalize;
+          color: white;
+          text-shadow: 2px 2px 10px black;
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Rent karo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-right mb-2 mb-lg-0" style="margin-left: auto;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Explore Cars</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+      
+
+      <!-- couresal -->
+
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="content">
+          <h1>get your best car here</h1>
+        </div>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <div class="container">
+        <div class="card" style="width: 18rem;">
+          <img src="img1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-outline-primary">rent this car</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="img2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-outline-primary">rent this car</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="img3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-outline-primary">rent this car</a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="container cont2">
+
+        <div class="card" style="width: 15rem; 
+          background-color: rgb(63, 180, 184);
+        ">
+          <div class="card-body">
+            <div class="icon"> <i class="fas fa-user"></i></div>
+            <h5 class="card-title">create profile</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 15rem;
+          background-color: rgb(105, 63, 184);
+        ">
+          <div class="card-body">
+            <div class="icon"> <i class="fa-regular fa-lightbulb"></i></div>
+            <h5 class="card-title">what car you want</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 15rem;
+          background-color: rgb(63, 184, 113);
+        ">
+          <div class="card-body">
+            <div class="icon"> <i class="fa-regular fa-handshake"></i></div>
+            <h5 class="card-title">match with dealer</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 15rem;
+          background-color: rgb(184, 63, 130);
+        ">
+          <div class="card-body">
+            <div class="icon"><i class="fa fa-sack-dollar"></i></div>
+            <h5 class="card-title">make a deal</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- footer design -->
+
+      <div class="cont">
+        <div class="topSec">
+          <div class="leftSec">
+             <div class="logo">Rent karo</div>
+             <div class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia nostrum fugit vero atque maxime provident veritatis, numquam animi enim rerum distinctio quasi consequatur explicabo voluptatibus iste laboriosam, ad et magnam.</div>
+             <div class="social">
+               <div class="icon"> <i class="fa-brands fa-instagram"></i></div>
+              <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+              <div class="icon"> <i class="fa-brands fa-youtube"></i></div>
+             </div>
+          </div>
+          <div class="rightSec">
+            <div class="bottomLinks">
+
+            
+            <div class="links">
+              <p>information</p>
+              <a href="">About us</a>
+              <a href="">Delivery infoarmation</a>
+              <a href="">terms & condition</a>
+              <a href="">help center</a>
+            </div>
+            <div class="links">
+              <p>service</p>
+              <a href="">My Account</a>
+              <a href="">Order List</a>
+              <a href="">Wishlist</a>
+              <a href="">Contact us</a>
+            </div>
+            <div class="links">
+              <p>Extras</p>
+              <a href="">Brands</a>
+              <a href="">Gift vouchers</a>
+              <a href="">Affilites</a>
+              <a href="">Specials</a>
+            </div>
+            <div class="links">
+              <p>My Account</p>
+              <a href="">My Account</a>
+              <a href="">Order History</a>
+              <a href="">Wish List</a>
+              <a href="">Newsletter</a>
+            </div>
+          </div>
+
+          <div class="subscribe">
+            <input type="text" placeholder="Enter your email">
+            <button>submit</button>
+          </div>
+
+          </div>
+        </div>
+
+        <div class="bottomSec">
+          <div class="copyright">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, voluptas!</div>
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
